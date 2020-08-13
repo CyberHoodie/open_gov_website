@@ -1,9 +1,10 @@
 import React from 'react';
 
 const NavDropdownToggle = React.forwardRef(({ children, onClick }, ref) => (
+  // eslint-disable-next-line
   <a
     href=""
-    class="nav-item nav-link dropdown-toggle"
+    className="nav-item nav-link dropdown-toggle"
     ref={ref}
     onClick={(e) => {
       e.preventDefault();

@@ -1,69 +1,69 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <>
-      <main class="byc-masthead byc-masthead-background-style-1" role="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 text-center text-md-left">
-              <h1 class="mb-3">
-                4 steps to help stop police brutality:
+      <main className="byc-masthead byc-masthead-background-style-1" role="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-10 text-center text-md-left">
+              <h1 className="mb-3">
+                {t('views.home.instructions.title')}
               </h1>
 
-              <p class="lead mb-5">
-                1. Dial the number below.<br />
-                2. Type in your zip code.<br />
-                3. Select a congressmen.<br />
-                4. Read from the script below.
+              <p className="lead mb-5">
+                {t('views.home.instructions.step_1')}<br />
+                {t('views.home.instructions.step_2')}<br />
+                {t('views.home.instructions.step_3')}<br />
+                {t('views.home.instructions.step_4')}
               </p>
 
-              <div class="d-flex flex-column flex-md-row">
-                <a href="tel:7752048432" class="btn btn-lg btn-custom-dark mb-3 mr-md-3">(775) 204-8432</a>
+              <div className="d-flex flex-column flex-md-row">
+                <a href="tel:7752048432" className="btn btn-lg btn-custom-dark mb-3 mr-md-3">(775) 204-8432</a>
               </div>
             </div>
           </div>
         </div>
       </main>
 
-      <div class="byc-masthead-followup">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="mb-3 text-center">
-                The George Floyd Justice in Policing Act of 2020
+      <div className="byc-masthead-followup">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="mb-3 text-center">
+                {t('views.home.scripts.title')}
               </h1>
 
-              <p class="lead mb-3 text-center text-muted">
-                The House of Representatives just passed this bill which, "addresses a
-                wide range of policies and issues regarding policing practices and law
-                enforcement accountability". Now it's up to the Senate. Call your
-                Senator and let them know this is an important issue for you.
+              <p className="lead mb-3 text-center text-muted">
+                {t('views.home.scripts.subtitle')}
               </p>
             </div>
 
-            <div class="col-md-6 mx-auto">
-              <div class="card my-5 text-body" >
-                <div class="card-body">
-                  <h2 class="card-title mb-4">
-                    When calling your senator, this can help
+            <div className="col-md-6 mx-auto">
+              <div className="card my-5 text-body" >
+                <div className="card-body">
+                  <h2 className="card-title mb-4">
+                    {t('views.home.scripts.senate.title')}
                   </h2>
 
-                  <p class="card-text">
-                    Hello, my name is <strong>YOUR NAME</strong>. I'm a constituent from
-                    <strong>YOUR CITY</strong>, zip code <strong>YOUR ZIP CODE</strong>.
-                    I don't need a response.
-                  </p>
+                  <p
+                    className="card-text"
+                    dangerouslySetInnerHTML={
+                      { __html: t('views.home.scripts.senate.paragraph_1_html') }
+                    }
+                  />
 
-                  <p class="card-text">
-                    I’m very concerned about the ongoing violence police officers are
-                    using against civilians and I strongly encourage the senator to vote
-                    yes on bill <strong>H.R.7120</strong>, the “George Floyd Justice in
-                    Policing Act of 2020“.
-                  </p>
+                  <p
+                    className="card-text"
+                    dangerouslySetInnerHTML={
+                      { __html: t('views.home.scripts.senate.paragraph_2_html') }
+                    }
+                  />
 
-                  <p class="card-text">
-                    Thank you for your hard work!
+                  <p className="card-text">
+                    {t('views.home.scripts.senate.paragraph_3')}
                   </p>
                 </div>
               </div>
@@ -73,15 +73,16 @@ export default function Home() {
 
           <hr />
 
-          <div class="text-center my-5">
+          <div className="text-center my-5">
             <h3>
-              Want to do more?
+              {t('views.home.donation.title')}
             </h3>
 
-            <p>
-              Support this site by donating with the button below. Any money not
-              used to keep the lights on will be donated to the <a href="https://secure.actblue.com/donate/naacp-1">NAACP</a>.
-            </p>
+            <p
+              dangerouslySetInnerHTML={
+                { __html: t('views.home.donation.description_html') }
+              }
+            />
 
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_donations" />

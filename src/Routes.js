@@ -1,9 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
+import { Footer } from './components/Footer';
 import { Home } from './views/Home';
-import { About } from './views/About';
-import { Dashboard } from './views/Dashboard';
+import { AboutQualifiedImmunity } from './views/AboutQualifiedImmunity';
+import { AboutCongress } from './views/AboutCongress';
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -27,13 +28,15 @@ export default function Routes() {
         </Route>
 
         <Route path="/about-qualified-immunity">
-          <About />
+          <AboutQualifiedImmunity />
         </Route>
 
         <Route path="/about-congress">
-          <Dashboard />
+          <AboutCongress />
         </Route>
       </Switch>
+
+      <Footer />
     </>
   );
 }
