@@ -1,0 +1,94 @@
+$theme-colors: (
+  "custom-dark": #1c1f21,
+);
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 3rem;
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* MASTHEAD STYLES
+-------------------------------------------------- */
+
+@media (min-width: 576px) {
+  .byc-masthead {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .byc-masthead h1 {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+}
+
+@media (max-width: 1200px) {
+  .byc-masthead .lead {
+    font-size: calc(1.275rem + .3vw);
+  }
+}
+
+.byc-masthead {
+  padding: 3rem 15px;
+
+  &.byc-masthead-background-style-1 {
+    background: linear-gradient(to right bottom,#f5f6fb 50%,#fff 50%);
+  }
+
+  &.byc-masthead-background-style-2 {
+    background: linear-gradient(to left bottom,#f5f6fb 50%,#fff 50%);
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #495057;
+  }
+
+  .btn {
+    padding: .8rem 2rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
+
+.byc-masthead-followup {
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+    color: #495057;
+  }
+}
