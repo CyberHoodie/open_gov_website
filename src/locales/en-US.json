@@ -1,0 +1,96 @@
+{
+  "views": {
+    "home": {
+      "instructions": {
+        "title": "4 steps to help stop police brutality:",
+        "step_1": "1. Dial the number below.",
+        "step_2": "2. Type in your zip code.",
+        "step_3": "3. Select a congressmen.",
+        "step_4": "4. Read from the script below."
+      },
+      "scripts": {
+        "title": "The George Floyd Justice in Policing Act of 2020",
+        "subtitle": "The House of Representatives just passed this bill which, \"addresses a wide range of policies and issues regarding policing practices and law enforcement accountability\". Now it's up to the Senate. Call your Senator and let them know this is an important issue for you.",
+        "senate": {
+          "title": "When calling your senator, this can help",
+          "paragraph_1_html": "Hello, my name is <strong>YOUR NAME</strong>. I'm a constituent from <strong>YOUR CITY</strong>, zip code <strong>YOUR ZIP CODE</strong>. I don't need a response.",
+          "paragraph_2_html": "I’m very concerned about the ongoing violence police officers are using against civilians and I strongly encourage the senator to vote yes on bill <strong>H.R.7120</strong>, the \"George Floyd Justice in Policing Act of 2020\".",
+          "paragraph_3": "Thank you for your hard work!"
+        }
+      },
+      "donation": {
+        "title": "Want to do more?",
+        "description_html": "Support this site by donating with the button below. Any money not used to keep the lights on will be donated to the <a href=\"https://secure.actblue.com/donate/naacp-1\">NAACP</a>"
+      }
+    },
+    "aboutQualifiedImmunity": {
+      "title": "What is Qualified Immunity?",
+      "quotation": {
+        "content": "Under the doctrine of qualified immunity, public officials are held to a much lower standard. They can be held accountable only insofar as they violate rights that are “clearly established” in light of existing case law.",
+        "authors": "Amir H. Ali and Emily Clark in",
+        "summary_html": "In other words, unless you can prove that a cop violated your rights, <em>and</em> another cop has been successfully sued for that same violation, your case will likely get thrown out. Here is another good description of what that means:",
+      "resolution_link_title": "Link to Senate Resolution to Abolish Qualified Immunity for Law Enforcement"
+      }
+    },
+    "aboutCongress": {
+      "imageAltText": "United States Capitol building at night",
+      "title": "What is Congress?",
+      "intro": {
+        "paragraph_1": "It is the legislative branch of the United States federal government. Put simply, it is responsible for making our nation's laws.",
+        "paragraph_2": "Interestingly, of the three main branches of our government, it is the only one that is elected directly by the American people. This gives us citizens a lot of power."
+      },
+      "house": {
+        "title": "The House of Representatives",
+        "imageAltText": "Seal of the United States House of Representatives",
+        "description": {
+          "paragraph_1": "In the House, each state has some representatives proportional to their population. The more people a state has, the more representatives it gets.",
+          "paragraph_2": "Each representative serves a two year term. Because each term is so short, representatives are constantly considering the opinion of the people. If not, they would be voted out quickly.",
+          "powers": {
+            "title": "The House's special powers include:",
+            "first": "Impeaching the president",
+            "second": "Deciding a presidential elections if there is a tie",
+            "third": "Any bills regarding taxes start in the House"
+          }
+        }
+      },
+      "senate": {
+        "title": "The Senate",
+        "logo_alt_text": "Seal of the United States Senate",
+        "description": {
+          "paragraph_1": "In the Senate, each state has the same number of senators, two. Therefore, each state is represented equally.",
+          "paragraph_2": "Each senator serves a six year term. The reason for the longer terms, according to the founding fathers, was to allow the senators to debate and think through issues, without being too affected by swaying public opinion.",
+          "powers": {
+            "title": "The Senate's special powers include:",
+            "first": "Holding impeachment trials",
+            "second": "Signing treaties",
+            "third": "Confirming special offices in the government like federal judges"
+          }
+        }
+      },
+      "twoParts": {
+        "title": "Why does Congress even have two parts?",
+        "description": {
+          "paragraph_1": "Well, the founding fathers were concerned that Congress would have too much power. So they split it up and made it so each part had power over the other.",
+          "paragraph_2": "A bill (proposal for a law) can start in either the Senate or the House. In each case it is debated, revised, and debated some more. Once that is finished, it has to go through the same process in the other part of Congress. Because each part can check the other, neither gets too much power.",
+          "paragraph_3": "Once both sides agree, you have a law!"
+        }
+      },
+      "moreResearch": {
+        "content": "You just read a quick summary of what the United States Congress is. If you are curious about learning more, check out this awesome crash course on YouTube:",
+        "buttonText": "YouTube Congress Crash Course"
+      }
+    }
+  },
+  "components": {
+    "navBar": {
+      "about": {
+        "label": "About",
+        "qualifiedImmunity": "About Qualified Immunity",
+        "congress": "About Congress"
+      }
+    },
+    "footer": {
+      "attributesHtml": "The code for this site is public on <a href=\"https://github.com/frankolson/bugyourcongressman\">GitHub</a>."
+    }
+  }
+}
